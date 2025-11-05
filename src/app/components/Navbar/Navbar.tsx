@@ -12,7 +12,7 @@ const Navbar = () => {
             <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 font-bold text-3xl cursor-pointer hover:scale-105 duration-300">
             Rodrigo Alfaro
             </h2>
-            <ul className="block sm:flex text-gray-700 font-semibold space-x-8">
+            <ul className="block sm:flex text-gray-700 font-semibold sm:space-x-8">
             <li className="flex gap-3 items-center hover:text-blue-600 hover:bg-blue-50 px-4 py-2 rounded-lg transition-all duration-300 ease-in-out cursor-pointer hover:scale-105 hover:shadow-md">
                 <FaLaptopCode size={22} className="text-blue-500" />
                 <span>Projects</span>
