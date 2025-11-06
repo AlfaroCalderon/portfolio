@@ -56,7 +56,7 @@ left: 50%;
   height: 100%;
   width: 6px;
   margin-left: -3px;
-  background: rgb(0, 217, 255);
+  background: linear-gradient(180deg, rgb(0, 217, 255), rgb(0, 150, 200));
   z-index: 1;
 }
 .right-arrow{
