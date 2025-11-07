@@ -6,7 +6,7 @@ import { VscVscode } from "react-icons/vsc";
 import { RiTailwindCssFill } from "react-icons/ri";
 
 
-const Skills = () => {
+export const Skills = () => {
   return (
     <>
     <section className=' max-w-7xl mx-3 lg:mx-auto my-3 p-4 mb-10'>
@@ -123,5 +123,3 @@ const Skills = () => {
     </>
   )
 }
-
-export default Skills

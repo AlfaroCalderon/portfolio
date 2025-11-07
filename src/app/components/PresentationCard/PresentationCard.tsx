@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { FaCode, FaLinkedin } from "react-icons/fa";
 
-const PresentationCard = () => {
+export const PresentationCard = () => {
     return(
         <>
         <section className="bg-white max-w-5xl flex mx-3 lg:mx-auto my-10 rounded-lg shadow-2xl p-8 flex-col">
@@ -17,13 +17,11 @@ const PresentationCard = () => {
                     Junior Web Developer with a passion for creating dynamic and responsive web applications. I enjoy exploring new technologies and building projects that make a difference. Always eager to learn new technologies and improve my skills.
                 </p>
                 <span className="flex flex-wrap justify-center gap-2 sm:space-x-4">
-                <a href="#work" className="bg-blue-700 font-bold text-white px-8 py-3 rounded-lg hover:bg-blue-600 group shadow-md "><FaCode size={20} className="inline-block mr-2 group-hover:animate-bounce" />View My Work</a>
-                <a href="#" className="bg-gray-300 font-bold px-8 py-3 rounded-lg hover:bg-gray-200 group shadow-md "><FaLinkedin size={20} className="inline-block mr-2 group-hover:animate-bounce" />LinkedIn Profile</a>
+                <a href="#work" className="bg-blue-700 font-bold text-white px-8 py-3 rounded-lg hover:bg-blue-600 group shadow-md transition-all duration-200 ease-in-out"><FaCode size={20} className="inline-block mr-2 group-hover:animate-bounce" />View My Work</a>
+                <a href="#" className="bg-gray-300 font-bold px-8 py-3 rounded-lg hover:bg-gray-200 group shadow-md transition-all duration-200 ease-in-out"><FaLinkedin size={20} className="inline-block mr-2 group-hover:animate-bounce" />LinkedIn Profile</a>
                 </span>
             </div>
         </section>
         </>
     )
 }
-
-export default PresentationCard;

@@ -1,7 +1,5 @@
 import Image from "next/image";
-import PresentationCard from "./components/PresentationCard/PresentationCard";
-import Skills from "./components/Skills/Skills";
-import Experience from "./components/Experience/Experience";
+import{ PresentationCard, Skills, Experience, Projects, Footer, ConnectForm } from "./components";
 
 export default function Home() {
   return (
@@ -9,6 +7,9 @@ export default function Home() {
     <PresentationCard />
     <Skills />
     <Experience />
+    <Projects />
+    <ConnectForm />
+    <Footer />
     </>
   );
 }

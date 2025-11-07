@@ -5,7 +5,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
 
 
-const Navbar = () => {
+export const Navbar = () => {
     const [menu, setMenu] = useState(false);
 
     const toggleMenu = () => {
@@ -52,5 +52,3 @@ const Navbar = () => {
         </>
     )
 }
-
-export default Navbar;
