@@ -10,7 +10,7 @@ export const Skills = () => {
   return (
     <>
     <section className=' max-w-7xl mx-3 lg:mx-auto my-3 p-4 mb-10' >
-        <h1 className="max-w-7xl mx-3 lg:mx-auto border-b-4 border-b-blue-600 text-4xl font-bold mb-8">Technical Skills & Tools</h1>
+        <h1 className="max-w-7xl mx-3 lg:mx-auto border-b-4 border-b-indigo-600 text-4xl font-bold mb-8">Technical Skills & Tools</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <div className='bg-white rounded-2xl shadow-2xl p-5'>
             <h2 className='text-2xl font-bold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2'>Front-End Development</h2>

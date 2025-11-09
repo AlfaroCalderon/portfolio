@@ -51,13 +51,6 @@ export const Navbar = () => {
             </span>
             <ul id="menu" className="hidden md:flex text-gray-700 font-semibold md:space-x-8 md:bg-transparent bg-white md:static absolute top-full left-0 w-full md:w-auto md:shadow-none shadow-lg md:flex-row flex-col md:p-0 p-4">
             <li 
-                className="flex gap-3 items-center hover:text-blue-600 hover:bg-blue-50 px-4 py-2 rounded-lg transition-all duration-300 ease-in-out cursor-pointer hover:scale-105 hover:shadow-md"
-                onClick={() => scrollToSection('projects')}
-            >
-                <FaLaptopCode size={22} className="text-blue-500" />
-                <span>Projects</span>
-            </li>
-            <li 
                 className="flex gap-3 items-center hover:text-purple-600 hover:bg-purple-50 px-4 py-2 rounded-lg transition-all duration-300 ease-in-out cursor-pointer hover:scale-105 hover:shadow-md"
                 onClick={() => scrollToSection('skills')}
             >
@@ -70,6 +63,13 @@ export const Navbar = () => {
             >
                 <MdOutlineWork size={22} className="text-green-500" />
                 <span>Experiences</span>
+            </li>
+            <li 
+                className="flex gap-3 items-center hover:text-blue-600 hover:bg-blue-50 px-4 py-2 rounded-lg transition-all duration-300 ease-in-out cursor-pointer hover:scale-105 hover:shadow-md"
+                onClick={() => scrollToSection('projects')}
+            >
+                <FaLaptopCode size={22} className="text-blue-500" />
+                <span>Projects</span>
             </li>
             {/* <li 
                 className="flex gap-3 items-center hover:text-orange-600 hover:bg-orange-50 px-4 py-2 rounded-lg transition-all duration-300 ease-in-out cursor-pointer  hover:scale-105 hover:shadow-md"

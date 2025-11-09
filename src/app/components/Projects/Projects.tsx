@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa";
 export const Projects = () => {
   return (
     <section className=' max-w-7xl mx-3 lg:mx-auto my-3 p-4 mb-10' >
-    <h1 className="max-w-7xl mx-3 lg:mx-auto border-b-4 border-b-blue-600 text-4xl font-bold mb-8">Featured Projects</h1>
+    <h1 className="max-w-7xl mx-3 lg:mx-auto border-b-4 border-b-indigo-600 text-4xl font-bold mb-8">Featured Projects</h1>
         <div className="grid grid-cols-1">
             
             <div className='bg-white grid grid-cols-1 md:grid-cols-2 rounded-2xl shadow-2xl p-5 mb-6 gap-2'>
@@ -27,7 +27,7 @@ export const Projects = () => {
                             </span>
                         ))}
                     </div>
-                    <div className='flex gap-3 mt-auto'>
+                    <div className='flex flex-wrap gap-3 mt-auto'>
                         <a href="https://github.com/AlfaroCalderon/accommodations_managment" target="_blank" rel="noopener noreferrer" className='px-4 py-2 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition-colors duration-300 cursor-pointer inline-flex items-center'>
                             <FaGithub className='inline-block mr-1' /> View Code
                         </a>
@@ -61,7 +61,7 @@ export const Projects = () => {
                             </span>
                         ))}
                     </div>
-                    <div className='flex gap-3 mt-auto'>
+                    <div className='flex flex-wrap gap-3 mt-auto'>
                         <a href="https://github.com/AlfaroCalderon/storedisign.github.io" target="_blank" rel="noopener noreferrer" className='px-4 py-2 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition-colors duration-300 cursor-pointer inline-flex items-center'>
                             <FaGithub className='inline-block mr-1' /> View Code
                         </a>
@@ -91,7 +91,7 @@ export const Projects = () => {
                             </span>
                         ))}
                     </div>
-                    <div className='flex gap-3 mt-auto'>
+                    <div className='flex flex-wrap gap-3 mt-auto'>
                         <a href="https://github.com/AlfaroCalderon/juice-wrld-playlist" target="_blank" rel="noopener noreferrer" className='px-4 py-2 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition-colors duration-300 cursor-pointer inline-flex items-center'>
                             <FaGithub className='inline-block mr-1' /> View Code
                         </a>
