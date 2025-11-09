@@ -5,7 +5,7 @@ import Image from "next/image";
 export const Experience = () => {
   return (
     <section className=' bg-white rounded-2xl shadow-2xl max-w-7xl mx-4 lg:mx-auto my-3 p-4'>
-        <h1 className="max-w-7xl mx-3 lg:mx-auto border-b-4 border-b-blue-600 text-4xl font-bold mt-8">Professional Experience</h1>
+        <h1 className="max-w-7xl mx-3 lg:mx-auto border-b-4 border-b-blue-600 text-4xl font-bold mt-4">Professional Experience</h1>
         
             <div className='timeline my-8'>
                 <div className='container left'>
