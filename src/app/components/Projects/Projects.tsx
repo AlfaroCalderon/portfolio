@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 
 export const Projects = () => {
   return (
-    <section className=' max-w-7xl mx-3 lg:mx-auto my-3 p-4 mb-10' >
+    <section className=' max-w-7xl mx-3 lg:mx-auto my-3 p-4 mb-6' >
     <h1 className="max-w-7xl mx-3 lg:mx-auto border-b-4 border-b-indigo-600 text-4xl font-bold mb-8">Featured Projects</h1>
         <div className="grid grid-cols-1">
             
