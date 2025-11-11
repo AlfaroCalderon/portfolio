@@ -11,9 +11,12 @@ type Inputs = {
 }
 export const ConnectForm = () => {
 
-    const {register, handleSubmit, watch, formState: {errors}} = useForm<Inputs>();
+    const {register, handleSubmit, watch, reset, formState: {errors}} = useForm<Inputs>();
 
     const formvalidation = (data:Inputs) => {
+
+        const messageBox = document.getElementById('sendingmessage');
+
         const message:Message = {
             name: data.name,
             email: data.email,
@@ -23,11 +26,38 @@ export const ConnectForm = () => {
 
         const messageSent = addFirebase({message});
 
-        if(!message){
-            console.log('The message has not been sent');
-        }else{
-            console.log('The message has been sent');
-        }
+        messageBox!.classList.remove('opacity-0', 'hidden');
+        messageBox!.classList.add('bg-gradient-to-r', 'from-blue-500', 'to-blue-600', 'text-white', 'shadow-lg', 'border', 'border-blue-300', 'animate-pulse');
+        messageBox!.innerHTML = 'Sending message... Please wait.';
+
+        setTimeout(()=>{
+            if(!messageSent){
+                console.log('The message has not been sent');
+                messageBox!.classList.remove('bg-gradient-to-r', 'from-blue-500', 'to-blue-600', 'text-white', 'shadow-lg', 'border', 'border-blue-300', 'animate-pulse');
+                messageBox!.classList.add('bg-red-900/50', 'text-red-300');
+                messageBox!.innerHTML = '❌ Error sending message. Please try again or email me directly.';
+            }else{
+                reset();
+                console.log('The message has been sent');
+                messageBox!.classList.remove('bg-gradient-to-r', 'from-blue-500', 'to-blue-600', 'text-white', 'shadow-lg', 'border', 'border-blue-300', 'animate-pulse');
+                messageBox!.classList.add('bg-green-900/50', 'text-green-300');
+                messageBox!.innerHTML = '✨ Message sent successfully! I will respond soon.';
+            }
+
+            setTimeout(()=> {
+                 messageBox!.classList.remove('bg-red-900/50', 'text-red-300','bg-green-900/50', 'text-green-300');
+                 messageBox!.classList.add('opacity-0', 'transition-all', 'duration-1000', 'ease-in-out');
+                 
+                 setTimeout(() => {
+                     messageBox!.classList.add('hidden');
+                      messageBox!.classList.remove('transition-all', 'duration-1000', 'ease-in-out');
+                    messageBox!.innerHTML = '';
+                 },1500)
+            },5000);
+
+
+        },2000);
+        
     }
 
 
@@ -63,10 +93,14 @@ export const ConnectForm = () => {
                     <p className='text-red-600'>{errors.message.message}</p> 
                 )}
             </div>
-            <div className='flex justify-center m-4'>
+            <div className='flex flex-col space-y-3 justify-center m-4'>
                 <button type='submit' className='bg-blue-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-200 cursor-pointer'>
                     Send Message
                 </button>
+
+                <div id='sendingmessage' className='opacity-0 hidden p-4 rounded-lg'>
+
+                </div>
             </div>
         </form>
     </section>
